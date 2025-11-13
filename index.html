@@ -1,4 +1,7 @@
+Here is the updated HTML with colors matched to your new logo and the header set up to showcase it. Use your new rectangular logo file name in the img src (for example `sayers-test-nest-logo.png`).
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,39 +16,53 @@
       font-family: 'Quicksand', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #111111;
+      background-color: #050813;
       color: #e5e5e5;
     }
 
     header {
-      background: linear-gradient(to right, #0f2318, #1a3a29);
+      background: radial-gradient(circle at top left, #1f2a3d 0, #050813 50%, #02040a 100%);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px 20px 36px 20px;
+    }
+
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
     }
 
     header img {
-      max-width: 160px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      max-width: 360px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 24px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     header h1 {
       margin: 0;
       font-size: 2.4rem;
-      color: #e5e5e5;
+      background: linear-gradient(90deg, #1fb4ff, #c74bff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     header p {
       margin-top: 10px;
-      font-size: 1.1rem;
-      color: #cfcfcf;
+      font-size: 1.05rem;
+      color: #cbd5f5;
     }
 
     nav {
-      background-color: #1e1e1e;
+      background-color: #050813;
       padding: 10px 0;
       text-align: center;
+      border-top: 1px solid #111827;
+      border-bottom: 1px solid #111827;
     }
 
     nav a {
@@ -54,38 +71,47 @@
       margin: 0 12px;
       font-size: 0.95rem;
       font-weight: 600;
+      letter-spacing: 0.03em;
     }
 
     nav a:hover {
-      color: #3fa96a;
+      color: #1fb4ff;
     }
 
     main {
-      padding: 20px;
+      padding: 24px 16px 32px 16px;
     }
 
     section {
-      padding: 30px 20px;
+      padding: 28px 20px;
       max-width: 900px;
       margin: 0 auto 20px auto;
-      background-color: #1c1c1c;
-      border-radius: 8px;
+      background-color: #0b1220;
+      border-radius: 10px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+      border: 1px solid #111827;
     }
 
     h2 {
-      color: #3fa96a;
+      color: #1fb4ff;
       margin-top: 0;
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 1.2rem;
     }
 
     h3 {
-      color: #5abf82;
+      color: #c74bff;
       margin-bottom: 6px;
+      margin-top: 18px;
+      font-size: 1.05rem;
     }
 
     p {
       line-height: 1.5;
       font-size: 0.98rem;
-      color: #e1e1e1;
+      color: #e5e7eb;
     }
 
     ul {
@@ -108,29 +134,31 @@
     }
 
     .button-row {
-      margin-top: 16px;
+      margin-top: 18px;
     }
 
     .btn {
       display: inline-block;
-      background: #3fa96a;
-      color: #111111;
-      padding: 10px 20px;
-      border-radius: 6px;
+      background: linear-gradient(90deg, #1fb4ff, #c74bff);
+      color: #050813;
+      padding: 10px 22px;
+      border-radius: 999px;
       text-decoration: none;
       font-weight: bold;
       font-size: 0.95rem;
       margin-right: 10px;
       margin-bottom: 8px;
+      border: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
     }
 
     .btn.secondary {
-      background: #5abf82;
-      color: #111111;
+      background: linear-gradient(90deg, #c74bff, #1fb4ff);
+      color: #050813;
     }
 
     .btn:hover {
-      opacity: 0.9;
+      filter: brightness(1.08);
     }
 
     .center {
@@ -142,6 +170,10 @@
       text-align: center;
     }
 
+    .badge-grid-wrapper h3 {
+      margin-top: 4px;
+    }
+
     .badge-grid {
       display: flex;
       flex-wrap: wrap;
@@ -151,16 +183,21 @@
     }
 
     footer {
-      background: #0d0d0d;
+      background: #02040a;
       text-align: center;
       padding: 16px;
       font-size: 0.85rem;
-      color: #8a8a8a;
+      color: #9ca3af;
+      border-top: 1px solid #111827;
+    }
+
+    footer span {
+      color: #c74bff;
     }
 
     @media (max-width: 600px) {
       header {
-        padding: 30px 16px;
+        padding: 30px 16px 26px 16px;
       }
 
       header h1 {
@@ -175,21 +212,31 @@
         display: inline-block;
         margin: 4px 8px;
       }
+
+      header img {
+        max-width: 280px;
+      }
     }
   </style>
+
 </head>
 
 <body>
 
   <header>
-    <img src="logo.png" alt="Sayers Test Nest Logo" />
-    <h1>Roje Sayers</h1>
-    <p>I work in cyber security and enjoy building labs, reviewing traffic, and supporting systems. I am open to new opportunities and ready to bring my skills to a new team.</p>
+    <div class="header-inner">
+      <img src="sayers-test-nest-logo.png" alt="Sayers Test Nest logo" />
+      <h1>Roje Sayers</h1>
+      <p>I work in cyber security and enjoy building labs, reviewing traffic, and supporting systems. I am open to new opportunities and ready to bring my skills to a new team.</p>
 
-    <div class="button-row">
-      <a href="#resume" class="btn">View Resume</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
-    </div>
+```
+  <div class="button-row">
+    <a href="#resume" class="btn">View Resume</a>
+    <a href="#contact" class="btn secondary">Contact Me</a>
+  </div>
+</div>
+```
+
   </header>
 
   <nav>
@@ -202,124 +249,126 @@
 
   <main>
 
-    <section id="about">
-      <h2>About Me</h2>
+```
+<section id="about">
+  <h2>About Me</h2>
 
-      <p>I am a Cyber Security Operator with hands on experience in packet analysis, network monitoring, and system support. I spend time in my lab testing tools, collecting traffic, and learning how systems behave. This helps me troubleshoot issues and improve how I work.</p>
+  <p>I am a Cyber Security Operator with hands on experience in packet analysis, network monitoring, and system support. I spend time in my lab testing tools, collecting traffic, and learning how systems behave. This helps me troubleshoot issues and improve how I work.</p>
 
-      <p>I use Security Onion, Wireshark, ESXi, Windows Server, Linux, and a mix of network analysis tools. I built a Windows Server 2025 lab to practice configuration, updates, storage, roles, and performance tuning. I also build workflows in SharePoint and Power Automate to cut down on manual steps and keep things organized. I am learning Python to support small scripts and simple automation.</p>
+  <p>I use Security Onion, Wireshark, ESXi, Windows Server, Linux, and a mix of network analysis tools. I built a Windows Server 2025 lab to practice configuration, updates, storage, roles, and performance tuning. I also build workflows in SharePoint and Power Automate to cut down on manual steps and keep things organized. I am learning Python to support small scripts and simple automation.</p>
 
-      <p>I enjoy digital forensics and practice basic file analysis, log review, and system behavior in my lab. I create clear SOPs and AARs that help teams follow repeatable steps and keep documentation simple.</p>
+  <p>I enjoy digital forensics and practice basic file analysis, log review, and system behavior in my lab. I create clear SOPs and AARs that help teams follow repeatable steps and keep documentation simple.</p>
 
-      <p>I hold a Bachelor’s Degree in Computer Network and Cybersecurity. My certifications include Security Plus, Network Plus, A Plus, Linux Plus, ISC2 CC, and CySA Plus.</p>
+  <p>I hold a Bachelor’s Degree in Computer Network and Cybersecurity. My certifications include Security Plus, Network Plus, A Plus, Linux Plus, ISC2 CC, and CySA Plus.</p>
 
-      <p>I was recently laid off. I am looking for a new role in cyber security, system support, or technical operations. I bring steady problem solving, clear communication, and a focus on simple, reliable results.</p>
-    </section>
+  <p>I was recently laid off. I am looking for a new role in cyber security, system support, or technical operations. I bring steady problem solving, clear communication, and a focus on simple, reliable results.</p>
+</section>
 
-    <section id="skills">
-      <h2>Skills</h2>
+<section id="skills">
+  <h2>Skills</h2>
 
-      <div class="skills-grid">
-        <div class="skills-column">
-          <h3>Technical Skills</h3>
-          <ul>
-            <li>Packet capture and analysis</li>
-            <li>Network monitoring</li>
-            <li>Windows Server support</li>
-            <li>Windows Server 2025 lab work</li>
-            <li>Linux troubleshooting</li>
-            <li>ESXi lab setup</li>
-            <li>Security Onion testing</li>
-            <li>Wireshark protocol review</li>
-            <li>Python basics</li>
-            <li>Digital forensics basics</li>
-            <li>Documentation</li>
-          </ul>
-        </div>
+  <div class="skills-grid">
+    <div class="skills-column">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Packet capture and analysis</li>
+        <li>Network monitoring</li>
+        <li>Windows Server support</li>
+        <li>Windows Server 2025 lab work</li>
+        <li>Linux troubleshooting</li>
+        <li>ESXi lab setup</li>
+        <li>Security Onion testing</li>
+        <li>Wireshark protocol review</li>
+        <li>Python basics</li>
+        <li>Digital forensics basics</li>
+        <li>Documentation</li>
+      </ul>
+    </div>
 
-        <div class="skills-column">
-          <h3>Automation</h3>
-          <ul>
-            <li>SharePoint list design</li>
-            <li>Power Automate flows</li>
-            <li>Certification tracking</li>
-            <li>Report building</li>
-            <li>Process improvements</li>
-            <li>File and record organization</li>
-            <li>User support</li>
-          </ul>
-        </div>
+    <div class="skills-column">
+      <h3>Automation</h3>
+      <ul>
+        <li>SharePoint list design</li>
+        <li>Power Automate flows</li>
+        <li>Certification tracking</li>
+        <li>Report building</li>
+        <li>Process improvements</li>
+        <li>File and record organization</li>
+        <li>User support</li>
+      </ul>
+    </div>
 
-        <div class="skills-column">
-          <h3>Documentation</h3>
-          <ul>
-            <li>SOP writing</li>
-            <li>AAR writing</li>
-            <li>Workflow guides</li>
-            <li>Step by step procedures</li>
-            <li>File and log review</li>
-          </ul>
-        </div>
-      </div>
+    <div class="skills-column">
+      <h3>Documentation</h3>
+      <ul>
+        <li>SOP writing</li>
+        <li>AAR writing</li>
+        <li>Workflow guides</li>
+        <li>Step by step procedures</li>
+        <li>File and log review</li>
+      </ul>
+    </div>
+  </div>
 
-      <div class="badge-grid-wrapper">
-        <h3>Certification Badges</h3>
+  <div class="badge-grid-wrapper">
+    <h3>Certification Badges</h3>
 
-        <div class="badge-grid">
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="52fc490a-c922-4b2e-8a66-f72bd4c8a00e" data-share-badge-host="https://www.credly.com"></div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="01fb4468-9b19-43c0-9a6f-3589c8756691" data-share-badge-host="https://www.credly.com"></div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0435b59c-5648-463e-a745-04b4ce7c2816" data-share-badge-host="https://www.credly.com"></div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="543c3b52-eac7-41d4-8649-af06df017001" data-share-badge-host="https://www.credly.com"></div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="90b2fc54-4ddf-4e32-99e9-810bc9d1999c" data-share-badge-host="https://www.credly.com"></div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4590207b-7885-45e8-838b-882b2a1f338c" data-share-badge-host="https://www.credly.com"></div>
-        </div>
+    <div class="badge-grid">
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="52fc490a-c922-4b2e-8a66-f72bd4c8a00e" data-share-badge-host="https://www.credly.com"></div>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="01fb4468-9b19-43c0-9a6f-3589c8756691" data-share-badge-host="https://www.credly.com"></div>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0435b59c-5648-463e-a745-04b4ce7c2816" data-share-badge-host="https://www.credly.com"></div>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="543c3b52-eac7-41d4-8649-af06df017001" data-share-badge-host="https://www.credly.com"></div>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="90b2fc54-4ddf-4e32-99e9-810bc9d1999c" data-share-badge-host="https://www.credly.com"></div>
+      <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4590207b-7885-45e8-838b-882b2a1f338c" data-share-badge-host="https://www.credly.com"></div>
+    </div>
 
-        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-      </div>
-    </section>
+    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+  </div>
+</section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+<section id="projects">
+  <h2>Projects</h2>
 
-      <h3>Security Onion Lab</h3>
-      <p>Built a Security Onion environment on ESXi and Proxmox. Tested sensors, collected traffic, and reviewed logs.</p>
+  <h3>Security Onion Lab</h3>
+  <p>Built a Security Onion environment on ESXi and Proxmox. Tested sensors, collected traffic, and reviewed logs.</p>
 
-      <h3>Windows Server 2025 Lab</h3>
-      <p>Built a Windows Server 2025 environment to practice configuration, updates, storage management, roles, and performance tuning.</p>
+  <h3>Windows Server 2025 Lab</h3>
+  <p>Built a Windows Server 2025 environment to practice configuration, updates, storage management, roles, and performance tuning.</p>
 
-      <h3>Wireshark Traffic Review</h3>
-      <p>Created a packet capture workflow and reviewed protocols to improve troubleshooting skills.</p>
+  <h3>Wireshark Traffic Review</h3>
+  <p>Created a packet capture workflow and reviewed protocols to improve troubleshooting skills.</p>
 
-      <h3>SharePoint Certification Tracker</h3>
-      <p>Created a certification tracking system using SharePoint and Power Automate with automated reminders and reports.</p>
+  <h3>SharePoint Certification Tracker</h3>
+  <p>Created a certification tracking system using SharePoint and Power Automate with automated reminders and reports.</p>
 
-      <h3>Tailscale Secure Access</h3>
-      <p>Set up Tailscale to connect to lab systems from different devices and verified access controls.</p>
+  <h3>Tailscale Secure Access</h3>
+  <p>Set up Tailscale to connect to lab systems from different devices and verified access controls.</p>
 
-      <h3>System Support and Operations</h3>
-      <p>Supported users, handled system issues, and maintained documentation. Built simple workflows to save time.</p>
-    </section>
+  <h3>System Support and Operations</h3>
+  <p>Supported users, handled system issues, and maintained documentation. Built simple workflows to save time.</p>
+</section>
 
-    <section id="resume" class="center">
-      <h2>Resume</h2>
-      <p>View my current resume to see my experience, certifications, and education.</p>
-      <a href="Resume Roje Sayers.pdf" target="_blank" class="btn">View My Resume (PDF)</a>
-      <p>Last updated in 2025.</p>
-    </section>
+<section id="resume" class="center">
+  <h2>Resume</h2>
+  <p>View my current resume to see my experience, certifications, and education.</p>
+  <a href="Resume Roje Sayers.pdf" target="_blank" class="btn">View My Resume (PDF)</a>
+  <p>Last updated in 2025.</p>
+</section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>I am open to roles in cyber security, system support, and technical operations. I enjoy hands on work, learning new tools, and improving daily processes.</p>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>I am open to roles in cyber security, system support, and technical operations. I enjoy hands on work, learning new tools, and improving daily processes.</p>
 
-      <p>Email: <a href="mailto:rsayers81@gmail.com">rsayers81@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/roje-s-661125189/" target="_blank">Visit my profile</a></p>
-      <p>I reply quickly and keep communication simple.</p>
-    </section>
+  <p>Email: <a href="mailto:rsayers81@gmail.com">rsayers81@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/roje-s-661125189/" target="_blank">Visit my profile</a></p>
+  <p>I reply quickly and keep communication simple.</p>
+</section>
+```
 
   </main>
 
   <footer>
-    © 2025 Roje Sayers | Sayers Test Nest
+    © 2025 <span>Roje Sayers</span> | Sayers Test Nest
   </footer>
 
 </body>
