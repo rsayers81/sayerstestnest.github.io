@@ -1,98 +1,296 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roje Sayers</title>
+
+  <title>Roje Sayers | Cyber Security Operator</title>
+
+  <meta name="description" content="Roje Sayers is a Cyber Security Operator with experience in SOC support, packet analysis, Security Onion, Wireshark, and automation using SharePoint and Power Automate." />
+
   <style>
     body {
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Quicksand', Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #c3c3c0;
+      color: #222222;
     }
+
     header {
       background: linear-gradient(to right, #EC4BA5, #A357D9);
       color: white;
       text-align: center;
       padding: 40px 20px;
     }
+
     header img {
       max-width: 160px;
       margin-bottom: 20px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
-      color: #256893;
+      color: white;
     }
+
     header p {
       margin-top: 10px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      color: white;
     }
+
+    nav {
+      background-color: #256893;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #f5f5f5;
+      margin-bottom: 20px;
+      border-radius: 8px;
     }
+
     h2 {
       color: #256893;
+      margin-top: 0;
     }
+
+    h3 {
+      color: #205B80;
+      margin-bottom: 6px;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .skills-column {
+      flex: 1 1 260px;
+      min-width: 220px;
+    }
+
+    .button-row {
+      margin-top: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #256893;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+      margin-right: 10px;
+      margin-bottom: 8px;
+    }
+
+    .btn.secondary {
+      background: #205B80;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    .center {
+      text-align: center;
+    }
+
     footer {
       background: #c3c3c0;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+      padding: 16px;
+      font-size: 0.85rem;
     }
-    a {
-      color: #205B80;
-      text-decoration: none;
+
+    @media (max-width: 600px) {
+      header {
+        padding: 30px 16px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 20px 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 4px 8px;
+      }
     }
   </style>
+
 </head>
+
 <body>
+
   <header>
-   <img src="logo.png" alt="Sayers Test Nest Logo" style="width: 25%; max-width: 300px; display: block; margin: 0 auto;" />
+    <img src="logo.png" alt="Sayers Test Nest Logo" />
     <h1>Roje Sayers</h1>
-    <p>Welcome to my digital home base — I build labs, analyze packets, and automate like a boss.</p>
+    <p>Cyber Security Operator focused on SOC support, packet analysis, and secure operations.</p>
+    <div class="button-row">
+      <a href="#resume" class="btn">View Resume</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
   </header>
 
-  
-<section style="padding: 40px 20px; max-width: 800px; margin: auto;">
-  <h2 style="color: #256893;">About Me</h2>
-  <p>I’m Roje Sayers — a cybersecurity operator with a passion for solving problems hands-on. I specialize in building labs, spinning up virtual infrastructure, and analyzing packet flows to detect and contain threats. My background includes work with Security Onion, VMware ESXi, SharePoint automations, and custom SIEM environments.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills and Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <p>I hold a Bachelor’s Degree in Computer Network & Cybersecurity and an Associate’s in Cybersecurity with Honors. I’ve completed coursework in ethical hacking, digital forensics, MySQL, cloud technologies, and penetration testing, and I’ve earned certifications, including ISC² CC, CompTIA Security+, Network+, A+, and Linux+, with CySA+ in progress.</p>
+  <main>
 
-  <p>Whether I’m hardening a corporate environment or managing a personal Wireshark home lab, I focus on staying ahead of threats and delivering solutions that work. I thrive in hybrid roles that blend technical depth with creative problem-solving.</p>
+```
+<section id="about">
+  <h2>About Me</h2>
+
+  <p>I am a Cyber Security Operator with experience in packet analysis, threat detection, and system monitoring. I build and maintain lab environments to test sensors, collect traffic, and study system activity. This work supports faster detection and response.</p>
+
+  <p>I use Security Onion, Wireshark, VMware ESXi, Windows Server, Linux systems, and network analysis tools. I also support automation and documentation with SharePoint and Power Automate to reduce manual work and improve accuracy.</p>
+
+  <p>I hold a Bachelor’s Degree in Computer Network and Cybersecurity and an Associate’s Degree in Cybersecurity. My coursework includes ethical hacking, digital forensics, MySQL, cloud technologies, and penetration testing. I hold certifications in ISC2 CC, Security Plus, Network Plus, A Plus, and Linux Plus. I am working on CySA Plus.</p>
+
+  <p>I focus on practical skills and tasks that improve day to day operations. I enjoy building systems, tuning workflows, and solving problems that support mission needs.</p>
 </section>
 
+<section id="skills">
+  <h2>Skills and Certifications</h2>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>Security Onion deployment on ESXi and Proxmox</li>
-      <li>Employee Certification Tracker using SharePoint + Power Automate</li>
-      <li>Wireshark home lab for packet analysis and protocol inspection</li>
-      <li>Custom VPN tunnel setup with OpenVPN</li>
-    </ul>
-  </section>
+  <div class="skills-grid">
+    <div class="skills-column">
+      <h3>Technical Skills</h3>
+      <ul>
+        <li>Security Onion deployment and use</li>
+        <li>Wireshark packet capture and analysis</li>
+        <li>SIEM log review and basic triage</li>
+        <li>Network traffic monitoring</li>
+        <li>Windows Server administration</li>
+        <li>Linux system use and support</li>
+        <li>VMware ESXi lab builds</li>
+        <li>OpenVPN setup and testing</li>
+      </ul>
+    </div>
 
-  <section style="text-align: center;">
-    <h2>Resume</h2>
-    <a href="2025 Roje Resume.pdf" target="_blank" style="display: inline-block; background: #256893; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">📄 View My Resume</a>
-  </section>
+    <div class="skills-column">
+      <h3>Automation and Tools</h3>
+      <ul>
+        <li>SharePoint list design and management</li>
+        <li>Power Automate flows for alerts and reporting</li>
+        <li>Documentation tracking for certificates</li>
+        <li>Report and dashboard support</li>
+      </ul>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:rsayers@sayerstestnest.net">rsayers@sayerstestnest.net</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/roje-s-661125189/" target="_blank">Visit my profile</a></p>
-  </section>
+      <h3>Certifications</h3>
+      <ul>
+        <li>ISC2 Certified in Cybersecurity</li>
+        <li>CompTIA Security Plus</li>
+        <li>CompTIA Network Plus</li>
+        <li>CompTIA A Plus</li>
+        <li>CompTIA Linux Plus</li>
+        <li>CompTIA CySA Plus in progress</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <h3>Focus Areas</h3>
+      <ul>
+        <li>SOC support and alert triage</li>
+        <li>Threat detection and basic incident review</li>
+        <li>Packet analysis and protocol review</li>
+        <li>Lab building and test environments</li>
+        <li>Process improvement and documentation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <h3>Security Onion Deployment on ESXi and Proxmox</h3>
+  <p>Built and configured Security Onion sensors on ESXi and Proxmox. Set up traffic mirroring and log collection. Used the environment to practice alert review, packet inspection, and timeline analysis.</p>
+
+  <h3>Employee Certification Tracker</h3>
+  <p>Created a certification tracking system using SharePoint and Power Automate. Automated expiration checks and email reminders. Reduced manual tracking, improved visibility, and made it easier to keep staff compliant.</p>
+
+  <h3>Wireshark Packet Analysis Lab</h3>
+  <p>Designed a home lab for packet capture and protocol analysis. Captured test traffic, built filters, and documented findings. Improved troubleshooting skills and confidence when reading pcap files.</p>
+
+  <h3>OpenVPN Tunnel Setup</h3>
+  <p>Configured an OpenVPN tunnel for secure remote access to a lab environment. Set user profiles, encryption options, and routes. Verified connectivity, access rules, and traffic flow.</p>
+</section>
+
+<section id="resume" class="center">
+  <h2>Resume</h2>
+  <p>View my current resume for details on experience, education, and certifications.</p>
+  <a href="2025 Roje Resume.pdf" target="_blank" class="btn">View My Resume (PDF)</a>
+  <p>Last updated in 2025.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>I am open to roles in SOC operations, incident response support, and cyber security operator work. I am also open to roles that use my mix of lab work, analysis, and automation.</p>
+
+  <p>Email: <a href="mailto:rsayers@sayerstestnest.net">rsayers@sayerstestnest.net</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/roje-s-661125189/" target="_blank">Visit my profile</a></p>
+  <p>I respond to messages in a timely manner.</p>
+</section>
+```
+
+  </main>
 
   <footer>
-    &copy; 2025 Roje Sayers | Sayers Test Nest | All rights reserved
+    © 2025 Roje Sayers | Sayers Test Nest
   </footer>
+
 </body>
 </html>
+::contentReference[oaicite:0]{index=0}
